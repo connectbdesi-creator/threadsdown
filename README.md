@@ -117,13 +117,13 @@ node server/index.js
 
 # 5. Configure Nginx
 sudo cp nginx.conf /etc/nginx/sites-available/threadsave
-sudo sed -i 's/yourdomain.com/REPLACE_WITH_YOUR_DOMAIN/g' /etc/nginx/sites-available/threadsave
+sudo sed -i 's/threadsdownloads.com/REPLACE_WITH_YOUR_DOMAIN/g' /etc/nginx/sites-available/threadsave
 sudo ln -s /etc/nginx/sites-available/threadsave /etc/nginx/sites-enabled/
 sudo nginx -t
 sudo systemctl reload nginx
 
 # 6. SSL via Let's Encrypt
-sudo certbot --nginx -d yourdomain.com -d www.yourdomain.com
+sudo certbot --nginx -d threadsdownloads.com -d www.threadsdownloads.com
 
 # 7. Start with PM2
 pm2 start ecosystem.config.js
