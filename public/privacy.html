@@ -14,6 +14,15 @@
   <link rel="canonical" href="https://yourdomain.com/privacy.html">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="stylesheet" href="/css/style.css?v=5">
+
+  <!-- Google Analytics (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TMW93N2TWM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TMW93N2TWM');
+  </script>
 </head>
 <body>
 
@@ -70,7 +79,7 @@
         <ul>
           <li><strong>Submitted URLs.</strong> When you submit a Threads post URL, our server uses it once to fetch the post page, extracts the media URL, and discards it. We do not log it persistently.</li>
           <li><strong>Server access logs.</strong> Like virtually every web server, ours records the request method, path, response status, response size, IP address, user agent, and timestamp. These logs are kept for up to 30 days for rate-limiting and abuse-prevention purposes, then rotated and deleted.</li>
-          <li><strong>Cookies.</strong> ThreadSave does not set any first-party tracking cookies. Third parties (Google AdSense) may set cookies for ad measurement and personalisation — see below.</li>
+          <li><strong>Cookies.</strong> ThreadSave does not set first-party tracking cookies. Third parties (Google AdSense and Google Analytics) may set cookies for ad measurement, personalisation, and aggregate analytics — see below.</li>
         </ul>
 
         <h2>How downloads work</h2>
@@ -105,14 +114,32 @@
           <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">policies.google.com/privacy</a>.
         </p>
 
+        <h2>Analytics</h2>
+        <p>
+          We use <strong>Google Analytics 4</strong> to understand aggregate traffic patterns —
+          how many people visit, which pages are popular, what country and device type they're on,
+          and roughly how the site performs. This is used purely to make ThreadSave better; we do
+          not use it to identify you personally or build advertising profiles on you.
+        </p>
+        <p>
+          Google Analytics may set cookies (e.g. <code>_ga</code>, <code>_ga_*</code>) and reports
+          IP addresses to Google in a truncated/anonymised form. You can opt out at any time:
+        </p>
+        <ul>
+          <li>Install the <a href="https://tools.google.com/dlpage/gaoptout" rel="noopener" target="_blank">Google Analytics Opt-out Browser Add-on</a>.</li>
+          <li>Use any browser's "Do Not Track" or tracking-protection feature.</li>
+          <li>Block analytics via your browser's privacy settings or an extension like uBlock Origin.</li>
+        </ul>
+
         <h2>Third parties we rely on</h2>
         <ul>
           <li><strong>Meta / Threads CDN</strong> — serves the actual media files. Your IP is shared with Meta when our server fetches a post page or media file; Meta's privacy policy applies to that interaction.</li>
           <li><strong>Google AdSense</strong> — displays ads. See above.</li>
-          <li><strong>Hosting provider</strong> — our VPS provider stores access logs as part of normal operations.</li>
+          <li><strong>Google Analytics 4</strong> — anonymised, aggregated traffic analytics. See above. <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google Privacy Policy</a>.</li>
+          <li><strong>Hosting provider</strong> — our VPS / web-host provider stores access logs as part of normal operations.</li>
         </ul>
         <p>
-          We do not use Google Analytics, Facebook Pixel, or other tracking SDKs.
+          We do not use Facebook Pixel, TikTok Pixel, or any other social-media tracking SDKs.
         </p>
 
         <h2>Children's privacy</h2>

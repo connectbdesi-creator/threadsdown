@@ -26,12 +26,21 @@ app.use(
           "'unsafe-inline'",
           'https://pagead2.googlesyndication.com',
           'https://www.googletagservices.com',
-          'https://adservice.google.com'
+          'https://adservice.google.com',
+          'https://www.googletagmanager.com',
+          'https://www.google-analytics.com'
         ],
         styleSrc: ["'self'", "'unsafe-inline'"],
         imgSrc: ['*', 'data:', 'blob:'],
         mediaSrc: ['*', 'blob:'],
-        connectSrc: ["'self'", 'https://pagead2.googlesyndication.com'],
+        connectSrc: [
+          "'self'",
+          'https://pagead2.googlesyndication.com',
+          'https://*.google-analytics.com',
+          'https://*.analytics.google.com',
+          'https://*.googletagmanager.com',
+          'https://stats.g.doubleclick.net'
+        ],
         frameSrc: [
           "'self'",
           'https://googleads.g.doubleclick.net',
