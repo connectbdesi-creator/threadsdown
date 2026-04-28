@@ -1,4 +1,4 @@
-# ThreadSave
+# Threads Download
 
 A free, fast, ad-supported Threads downloader. Paste a public Threads post URL, get the video, image, or carousel. No signup, no app, no watermark.
 
