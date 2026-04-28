@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node --check server/index.js)",
+      "Bash(node --check server/routes/download.js)",
+      "Bash(node --check server/services/threads.js)",
+      "Bash(node --check server/middleware/rateLimit.js)",
+      "Bash(node --check ecosystem.config.js)",
+      "Bash(node --check public/js/app.js)",
+      "Bash(awk '{ *)",
+      "Bash(awk 'BEGIN{open=0} { *)"
+    ]
+  }
+}

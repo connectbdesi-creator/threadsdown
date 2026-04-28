@@ -1,0 +1,14 @@
+node_modules
+npm-debug.log
+.env
+.env.*
+logs
+*.log
+.git
+.gitignore
+.DS_Store
+README.md
+nginx.conf
+ecosystem.config.js
+.idea
+.vscode

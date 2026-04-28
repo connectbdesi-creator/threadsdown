@@ -1,0 +1,27 @@
+{
+  "name": "threadsave",
+  "version": "1.0.0",
+  "description": "Threads video, image, and carousel downloader. Free, fast, no signup.",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "NODE_ENV=development node server/index.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "axios": "^1.7.7",
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^7.2.0",
+    "morgan": "^1.10.0"
+  },
+  "optionalDependencies": {
+    "https-proxy-agent": "^7.0.5"
+  },
+  "license": "MIT"
+}
